@@ -63,7 +63,7 @@ $(document).ready(function () {
 /*============ SKILLS COUNTER UP: ============*/
 $(document).ready(function () {
   $('.counter').counterUp({
-    delay: 10,
+    delay: 30,
     time: 1800
   });
 });
