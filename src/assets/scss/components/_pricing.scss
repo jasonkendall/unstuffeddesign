@@ -1,0 +1,36 @@
+#pricing {
+    background-color: $white;
+    padding: 2rem 0;
+
+    .h4 {
+        margin-bottom: rem-calc(6);
+    }
+
+    .price {
+        border-bottom: 1px solid $color-8;
+        margin-bottom: rem-calc(16);
+        padding: rem-calc(0 0 16);
+    }
+
+    .card {
+        border-top: 2px solid $color-5;
+        @include box-shadow(0, 0, 10px, rgba($color-2, .12));
+        transition: transform 0.7s ease;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .callout {
+        background-color: lighten($color-8, 4%);
+        border-color: $color-8;
+        margin-top: rem-calc(24);
+
+        .h4 {
+            border-bottom: 1px solid $color-8;
+            margin-bottom: rem-calc(16);
+            padding: rem-calc(0 0 16);
+        }
+    }
+}

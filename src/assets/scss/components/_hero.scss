@@ -1,0 +1,21 @@
+$hero-full-screen-bg: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+url('../img/jumbo-background.jpg');
+$hero-full-screen-bg-size: cover;
+$hero-full-screen-text-color: $white;
+
+#hero {
+
+    .hero-full-screen {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background: $hero-full-screen-bg;
+        background-size: $hero-full-screen-bg-size;
+
+        .caption {
+            color: $hero-full-screen-text-color;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<section class="pricing-page">
+    {{> animated-title-and-underline}}
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x grid-padding-x">
+            <div class="cell large-9">
+
+                {{#ifpage 'basic-pricing'}}
+                {{> basic-pricing-content}}
+                {{/ifpage }}
+
+                {{#ifpage 'pro-pricing'}}
+                {{> pro-pricing-content}}
+                {{/ifpage }}
+
+                {{#ifpage 'premium-pricing'}}
+                {{> premium-pricing-content}}
+                {{/ifpage }}
+
+            </div>
+            <div class="cell large-3">
+                <h4>Pricing Plans</h4>
+                {{> side-nav }}
+            </div>
+        </div>
+    </div>
+</section>

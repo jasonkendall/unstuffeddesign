@@ -1,0 +1,12 @@
+body {
+    color: $black;
+    overflow-x: hidden;
+}
+
+a {
+    font-weight: 500;
+
+    &:focus {
+        outline: none;
+    }
+}

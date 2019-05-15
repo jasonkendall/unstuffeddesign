@@ -1,0 +1,47 @@
+$default-top: 0px !default;
+$default-left: 0px !default;
+$default-blur: 10px !default;
+$default-color: rgba($color-2, .8) !default;
+$default-inset: false !default;
+
+@mixin box-shadow($top: $default-top, $left: $default-left, $blur: $default-blur, $color: $default-color, $inset: $default-inset) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $color;
+        -moz-box-shadow: inset $top $left $blur $color;
+        box-shadow: inset $top $left $blur $color;
+    }
+
+    @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
+}
+
+// GRADIENT - example: @include gradient($color-1, $color-3);
+$default-from-color: $color-1;
+$default-to-color: lighten($color-8, 8%);
+
+@mixin gradient($from: $default-from-color, $to: $default-to-color) {
+    background: linear-gradient(180deg, $from, $to);
+}
+
+// BORDERED - example: @include bordered(1px, solid, $color-1);
+$default-border-width: 1px;
+$default-border-style: solid !important;
+$default-border-color: $color-8;
+
+@mixin bordered($border-width: $default-border-width, $border-style: $default-border-style, $border-color: $default-border-color) {
+    border-width: $border-width;
+    border-style: $border-style;
+    border-color: $border-color;
+}
+
+@mixin transition($what: all, $time: 0.18s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition: $what $time $how;
+    -ms-transition: $what $time $how;
+    -webkit-transition: $what $time $how;
+    -o-transition: $what $time $how;
+    transition: $what $time $how;
+}

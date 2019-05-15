@@ -1,0 +1,33 @@
+#testimonials {
+    background: $color-3;
+    color: $white;
+    padding: 2rem 0;
+
+    img {
+        border-radius: 50%;
+        background: $white;
+    }
+
+    blockquote {
+        border-left: 0;
+        color: $white;
+
+        .fa-quote-left {
+            color: $color-5;
+        }
+
+        cite {
+            color: $white;
+            font-weight: $global-weight-bold;
+        }
+
+        hr {
+            border-color: $white;
+        }
+    }
+
+    .owl-dot.active span,
+    .owl-dot:hover span {
+        background: #1ebba3 !important;
+    }
+}

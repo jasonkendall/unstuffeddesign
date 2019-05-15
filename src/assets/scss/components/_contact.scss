@@ -1,0 +1,79 @@
+#contact {
+    color: $white;
+
+    #fixed {
+        background-image: url('../img/adult-coffee-commerce.jpg');
+    }
+
+    .dark {
+        padding: 2rem 0;
+        //min-height: 800px;
+    }
+
+    .logo {
+        margin-bottom: rem-calc(32);
+        width: rem-calc(200);
+    }
+
+    .contact-info {
+
+        .h6 {
+            border-bottom: 1px solid $color-6;
+            font-weight: $global-weight-bold;
+            margin-top: rem-calc(16);
+            padding-bottom: rem-calc(8);
+        }
+
+        p {
+            margin-bottom: 0;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    color: $color-6;
+                }
+            }
+        }
+
+        .social-links {
+            margin-top: rem-calc(8);
+
+            li a {
+                color: $white;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-6;
+                }
+            }
+        }
+    }
+
+    #contact-form {
+
+        label {
+            color: $white;
+        }
+
+        input,
+        textarea {
+            color: $white;
+
+            &:focus {
+                color: $black;
+            }
+
+            &.button:focus {
+                color: $white;
+            }
+        }
+    }
+
+    .copyright {
+        border-top: 1px solid rgba($white, .25);
+        font-size: rem-calc(14);
+        margin-top: rem-calc(24);
+        padding: rem-calc(20px 0 0);
+    }
+}

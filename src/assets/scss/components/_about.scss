@@ -1,0 +1,32 @@
+#about {
+
+    .general-info {
+        padding: rem-calc(32 0);
+    }
+
+}
+
+#skills {
+    background: $color-8;
+    padding: rem-calc(32 0 0);
+
+    .skill {
+        margin-bottom: rem-calc(32);
+
+        span[class*=fa-] {
+            color: $color-5;
+        }
+
+        h3 {
+            margin-bottom: 0;
+
+            .counter {
+                font-weight: $global-weight-bold;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

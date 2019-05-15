@@ -1,0 +1,28 @@
+.menu.side-nav {
+    border: 1px solid $light-gray;
+    border-top: 2px solid $color-5;
+    border-radius: $global-radius;
+    @include box-shadow(0, 0, 10px, rgba($color-2, .12));
+
+    li {
+        border-bottom: 1px solid $light-gray;
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+
+        a {
+            color: $color-3;
+
+            &:hover {
+                color: $color-2;
+            }
+        }
+
+        & a.is-active {
+            border-left: 10px solid $color-4;
+            color: $color-2;
+            transition: border-left .5s ease 0s;
+        }
+    }
+}
