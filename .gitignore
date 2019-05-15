@@ -7,4 +7,4 @@ dist
 .cache
 .idea
 .vscode
-.ai
+*.ai
