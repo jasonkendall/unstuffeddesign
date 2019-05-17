@@ -1,21 +1,22 @@
 <section id="about">
-    <div class="grid-container">
-        <div class="grid-x grid-margin-x grid-padding-x">
+    <div id="resume" class="grid-container">
+        <div class="grid-x">
             <div class="cell text-center general-info">
                 {{> animated-title-and-underline}}
-                <div class="os-animation" data-animation="fadeInUp">
-                    <p>This is some text about me.</p>
-                    <a href="{{root}}/assets/docs/resume/jasonkendall-webDeveloper.pdf" class="button primary"
-                        target="_blank">Download
-                        My Resume</a>
-                </div>
+            </div>
+            <div class="os-animation" data-animation="fadeInUp">
+                {{> resume}}
+            </div>
+            <div class="os-animation cell text-center" data-animation="fadeInUp">
+                <a href="{{root}}/assets/docs/resume/jasonkendall-webDeveloper.pdf" class="button primary"
+                        target="_blank">Download My Resume</a>
             </div>
         </div>
     </div>
     <div id="skills">
         <div class="cell text-center">
-            <div class="os-animation" data-animation="fadeInDown">
-                <h3 class="h3 page-title">Skills</h3>
+            <div class="os-animation" data-animation="fadeInDown" data-delay=".2s">
+                <h3 class="h3 page-title">Skills At-A-Glance</h3>
                 <p class="small">(On a 1-10 Scale)</p>
                 <div class="heading-underline"></div>
             </div>
@@ -54,7 +55,7 @@
                                 <i class="fas fa-magic fa-inverse" data-fa-transform="shrink-7"></i>
                             </span>
                             <h3><span class="counter">10</span></h3>
-                            <h4 class="h6">Working in Adobe Photoshop</h4>
+                            <h4 class="h6">Adobe Photoshop</h4>
                         </div>
                     </div>
                 </div>
@@ -66,7 +67,7 @@
                                 <i class="fas fa-bezier-curve fa-inverse" data-fa-transform="shrink-8 left-1.9"></i>
                             </span>
                             <h3><span class="counter">10</span></h3>
-                            <h4 class="h6">Working in Adobe Illustrator</h4>
+                            <h4 class="h6">Adobe Illustrator</h4>
                         </div>
                     </div>
                 </div>
