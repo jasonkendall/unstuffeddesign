@@ -9,66 +9,31 @@
                             <div class="contact-info">
                                 <h5 class="h6">Located In</h5>
                                 <p>Waxhaw, NC 28173</p>
-                                <h5 class="h6">Contact Info</h5>
-                                <p><a href="tel:18036083101">(803) 608-3101</a></p>
-                                <p><a href="mailto:jason@unstuffeddesign.com">jason@unstuffeddesign.com</a></p>
                                 <h5 class="h6">Follow On</h5>
                                 <ul class="menu simple social-links">
-                                    <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                                    <li><a href="https://www.facebook.com/unstuffeddesign/" target="_blank"><i
+                                                class="fab fa-facebook fa-2x"></i></a></li>
+                                    <li><a href="https://twitter.com/unstuffeddesign" target="_blank"><i
+                                                class="fab fa-twitter fa-2x"></i></a></li>
+                                    <li><a href="https://www.instagram.com/jasonkendall/" target="_blank"><i
+                                                class="fab fa-instagram fa-2x"></i></a></li>
                                 </ul>
                             </div>
+                            <a href="{{root}}/resume.html" class="button primary">View Resume</a>
                         </div>
                     </div>
                     <div class="medium-6 medium-offset-2 cell small-order-1 medium-order-2">
                         <div class="{{animation-class}}" data-animation="{{data-animation-right}}">
                             <h5 class="h3 text-center">Contact Me</h5>
                             <div class="heading-underline"></div>
-                            <form id="contact-form" method="POST" action="contact.php" data-abide novalidate>
-                                <div class="messages"></div>
-                                <div data-abide-error class="alert callout" aria-live="assertive"
-                                    style="display: none;">
-                                    <p><i class="fas fa-exclamation-circle"></i> There are some errors in your form.</p>
-                                </div>
-                                <div class="controls">
-                                    <div class="form-group">
-                                        <label class="form-control">Your Name:
-                                            <input id="form_name" type="text" name="name" placeholder="Enter your name."
-                                                aria-errormessage="nameError" required="required">
-                                            <span class="form-error" id="nameError">
-                                                Did you forget your name?
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-control">Email Address:
-                                            <input id="form_email" type="email" name="email"
-                                                placeholder="Enter your email addresss." aria-errormessage="emailError"
-                                                required="required">
-                                            <span class="form-error" id="emailError">
-                                                Hey! I need a valid email address.
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="form-control">Message:
-                                            <textarea id="form_message" name="message" class="form-control"
-                                                placeholder="Add your message." rows="4"
-                                                aria-errormessage="messageError" required="required"></textarea>
-                                            <span class="form-error" id="messageError">
-                                                Don't be shy. Type your message here.
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <input type="submit" class="button primary" value="Send Message">
-                                </div>
-                            </form>
+                            {{> contact-form }}
                         </div>
                     </div>
                 </div>
                 <div class="cell">
-                    <p class="copyright">&copy;2019 Unstuffed Design, LLC</p>
+                    <p class="copyright">&copy;2010
+                        <script>new Date().getFullYear() > 2010 && document.write("- " + new Date().getFullYear());</script>
+                        Unstuffed Design, LLC</p>
                 </div>
             </div>
             <div class="fixed-wrap">

@@ -4,7 +4,7 @@
 @import 'foundation';
 @import 'motion-ui';
 
-// Global styles
+// Global styles 
 @include foundation-global-styles;
 @include foundation-forms;
 @include foundation-typography;
@@ -82,7 +82,7 @@
 @import 'components/testimonial-slider';
 @import 'components/contact';
 @import 'components/about';
-@import 'components/resume';
+@import 'components/resume-page';
 @import 'components/pricing-page';
 @import 'components/side-nav';
 

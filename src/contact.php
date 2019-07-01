@@ -5,8 +5,9 @@ THIS FILE USES PHPMAILER INSTEAD OF THE PHP MAIL() FUNCTION
 */
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-require './PHPMailer-master/vendor/autoload.php';
+require 'PHPMailer-master/vendor/autoload.php';
 
 /*
 *  CONFIGURE EVERYTHING HERE
