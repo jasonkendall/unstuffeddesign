@@ -1,7 +1,8 @@
-<form id="contact-form" method="POST" action="contact.php" data-abide novalidate>
+<h5 class="h3 text-center">Contact Me</h5>
+<div class="heading-underline"></div>
+<form id="contact-form" method="POST" action="/contact.php" data-abide novalidate>
     <div class="messages"></div>
-    <div data-abide-error class="alert callout" aria-live="assertive"
-        style="display: none;">
+    <div data-abide-error class="alert callout" aria-live="assertive" style="display: none;">
         <p><i class="fas fa-exclamation-circle"></i> There are some errors in your form.</p>
     </div>
     <div class="controls">
@@ -16,9 +17,8 @@
         </div>
         <div class="form-group">
             <label class="form-control">Email Address:
-                <input id="form_email" type="email" name="email"
-                    placeholder="Enter your email addresss." aria-errormessage="emailError"
-                    required="required">
+                <input id="form_email" type="email" name="email" placeholder="Enter your email addresss."
+                    aria-errormessage="emailError" required="required">
                 <span class="form-error" id="emailError">
                     Hey! I need a valid email address.
                 </span>
@@ -26,8 +26,7 @@
         </div>
         <div class="form-group">
             <label class="form-control">Message:
-                <textarea id="form_message" name="message" class="form-control"
-                    placeholder="Add your message." rows="4"
+                <textarea id="form_message" name="message" class="form-control" placeholder="Add your message." rows="4"
                     aria-errormessage="messageError" required="required"></textarea>
                 <span class="form-error" id="messageError">
                     Don't be shy. Type your message here.

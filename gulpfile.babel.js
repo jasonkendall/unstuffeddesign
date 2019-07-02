@@ -57,12 +57,12 @@ function copy() {
 }
 
 function copyMailer() {
-  return gulp.src('src/PHPMailer-master/**/*')
-    .pipe(gulp.dest(PATHS.dist + '/PHPMailer-master'));
+  return gulp.src('src/pages/vendor/**/*') //src/PHPMailer-master/**/*'
+    .pipe(gulp.dest(PATHS.dist + '/vendor')); ///PHPMailer-master
 }
 
 function copyContact() {
-  return gulp.src('src/contact.php')
+  return gulp.src('src/pages/contact.php')
     .pipe(gulp.dest(PATHS.dist));
 }
 
@@ -89,14 +89,6 @@ function resetPages(done) {
   panini.refresh();
   done();
 }
-
-// Generate a style guide from the Markdown content and HTML template in styleguide/
-// function styleGuide(done) {
-//   sherpa('src/styleguide/index.md', {
-//     output: PATHS.dist + '/styleguide.html',
-//     template: 'src/styleguide/template.html'
-//   }, done);
-// }
 
 // Compile Sass into CSS
 // In production, the CSS is compressed
@@ -198,5 +190,4 @@ function watch() {
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
-  //gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
