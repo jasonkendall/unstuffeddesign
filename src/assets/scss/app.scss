@@ -19,7 +19,7 @@
 //@include foundation-button-group;
 @include foundation-close-button;
 @include foundation-label;
-//@include foundation-progress-bar;
+@include foundation-progress-bar;
 //@include foundation-slider;
 //@include foundation-switch;
 //@include foundation-table;
@@ -85,6 +85,7 @@
 @import 'components/resume-page';
 @import 'components/pricing-page';
 @import 'components/side-nav';
+@import 'components/progress-bar';
 
 // Vendor
 @import 'vendor/waypoints';

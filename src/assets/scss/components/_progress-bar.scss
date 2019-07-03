@@ -1,0 +1,14 @@
+#progress-bar-container {
+    .h6 {
+        font-weight: bold;
+        margin-bottom: rem-calc(6);
+    }
+
+    .progress {
+        margin-bottom: rem-calc(24);
+
+        .progress-meter {
+            transition: width 4s ease-in-out;
+        }
+    }
+}
