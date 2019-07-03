@@ -104,3 +104,19 @@ $(document).ready(function () {
     else $(".alert.callout").css("display", "none");
   });
 });
+
+/*============ ANIMATE PROGRESS BARS ============*/
+$(document).ready(function () {
+  $('#header').waypoint(function (direction) {
+    if (direction === 'down') {
+      $('.progress-meter').width(function () {
+        // this here refers to individual .progress-bar items
+        return $(this).data('score');
+      });
+    } else {
+      $('.progress-meter').width(0);
+    }
+  }, {
+    offset: '-5%'
+  });
+});
