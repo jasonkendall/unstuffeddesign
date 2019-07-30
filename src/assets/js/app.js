@@ -19,5 +19,7 @@ import "./lib/vendor/waypoints";
 import "./lib/vendor/owl.carousel";
 import "./lib/vendor/contact";
 import "./lib/vendor/validator";
-import "./lib/vendor/jquery.counterup.js";
+import "./lib/vendor/jquery.counterup";
+import "./lib/vendor/lightbox";
 import "./lib/custom";
+import "./lib/portfolio";

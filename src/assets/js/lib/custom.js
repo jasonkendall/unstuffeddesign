@@ -120,3 +120,5 @@ $(document).ready(function () {
     offset: '-5%'
   });
 });
+
+/*============ BUILD AND LOOP THROUGH THE PORTFOLIO ============*/
