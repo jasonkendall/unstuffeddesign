@@ -1,4 +1,28 @@
 #features {
     background: $color-8;
     padding: 2rem 0;
+
+    .h4 {
+        margin-bottom: rem-calc(14);
+    }
+
+    span+p {
+        margin-top: rem-calc(14);
+    }
+
+    .fa-code {
+        color: #f16529;
+    }
+
+    .fa-css3 {
+        color: #379ad6;
+    }
+
+    .fa-sass {
+        color: #d56fa4;
+    }
+
+    .fa-js {
+        color: #ffc732;
+    }
 }
